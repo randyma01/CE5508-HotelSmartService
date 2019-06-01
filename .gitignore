@@ -1,0 +1,24 @@
+# author: randy martinez #
+# proj: HotelSmartService #
+
+# -- general -- #
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+**/.DS_Store
+.DS_Store
+**/.bin
+.bin
+
+# -- app --#
+
+#depenc#
+app/SmartHotelService/node_modules
+
+# -- backend --#
+
+# -- specs --#
