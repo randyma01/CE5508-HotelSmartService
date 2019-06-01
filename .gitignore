@@ -13,12 +13,15 @@ npm-debug.*
 .DS_Store
 **/.bin
 .bin
+.expo
 
-# -- app --#
+# -- app -- #
+#expo#
+app/hotel-smart-devices/.expo
 
 #depenc#
-app/SmartHotelService/node_modules
+app/hotel-smart-devices/node_modules
 
-# -- backend --#
+# -- backend -- #
 
-# -- specs --#
+# -- specs -- #

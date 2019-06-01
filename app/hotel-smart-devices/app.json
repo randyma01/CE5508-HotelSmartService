@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "SmartHotelService",
-    "slug": "SmartHotelService",
+    "name": "hotel-smart-devices-app",
+    "slug": "hotel-smart-devices",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "platforms": [
