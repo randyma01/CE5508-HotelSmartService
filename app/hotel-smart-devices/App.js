@@ -1,9 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
 
-import HomeTab from './src/home-tab/index';
+import ControllerTab from './src/controller-tab/index';
 
-export default class App extends React.Component {
+const AppStack = createStackNavigator({
+  ControllerTab: { screen: ControllerTab }
+});
+
+const App = createAppContainer(AppStack);
+
+export default App;
+
+/* export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -20,4 +27,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
-});
+}); */
