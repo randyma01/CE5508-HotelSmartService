@@ -11,43 +11,43 @@ import ReservationTab from '../reservation-tab/index';
 
 const TabsControl = createBottomTabNavigator(
   {
-    Activity: {
+    Activities: {
       screen: ActivityTab
     },
     Climate: {
       screen: ClimateTab
-    },
-    Extras: {
-      screen: ExtrasTab
-    },
-    Feedback: {
-      screen: FeedbackTab
     },
     Home: {
       screen: HomeTab
     },
     Reservation: {
       screen: ReservationTab
+    },
+    Feedback: {
+      screen: FeedbackTab
+    },
+    Extras: {
+      screen: ExtrasTab
     }
   },
 
   {
     defaultNavigationOptions: ({ navigation }) => ({
-      tabBarIcon: ({ focused, tintColor }) => {
+      tabBarIcon: ({ tintColor }) => {
         const { routeName } = navigation.state;
         let iconName;
-        if (routeName === 'Activity') {
-          iconName = `google-controller${focused ? '' : '-off'}`;
+        if (routeName === 'Activities') {
+          iconName = `google-controller`;
         } else if (routeName === 'Climate') {
-          iconName = `chart-bar${focused ? '' : '-stacked'}`;
+          iconName = `white-balance-sunny`;
         } else if (routeName === 'Extras') {
-          iconName = `chart-bar${focused ? '' : '-stacked'}`;
+          iconName = `account`;
         } else if (routeName === 'Feedback') {
-          iconName = `chart-bar${focused ? '' : '-stacked'}`;
+          iconName = `emoticon-happy`;
         } else if (routeName === 'Home') {
-          iconName = `chart-bar${focused ? '' : '-stacked'}`;
+          iconName = `home`;
         } else if (routeName === 'Reservation') {
-          iconName = `chart-bar${focused ? '' : '-stacked'}`;
+          iconName = `format-list-checks`;
         }
         return (
           <MaterialCommunityIcons name={iconName} size={30} color={tintColor} />
@@ -56,8 +56,8 @@ const TabsControl = createBottomTabNavigator(
     }),
 
     tabBarOptions: {
-      activeTintColor: 'red',
-      inactiveTintColor: 'blue'
+      activeTintColor: '#FF7C00',
+      inactiveTintColor: '#8E8E8E'
     }
   }
 );
