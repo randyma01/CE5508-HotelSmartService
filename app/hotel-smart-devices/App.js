@@ -15,14 +15,14 @@ import ReservationTab from './src/screens/reservation/index';
 
 const AppNavigator = createBottomTabNavigator(
   {
+    Home: {
+      screen: HomeTab
+    },
     Activities: {
       screen: ActivityTab
     },
     Climate: {
       screen: ClimateTab
-    },
-    Home: {
-      screen: HomeTab
     },
     RSVN: {
       screen: ReservationTab

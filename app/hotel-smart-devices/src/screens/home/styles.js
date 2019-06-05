@@ -1,24 +1,24 @@
 import { StyleSheet } from 'react-native';
 
-const stylesHomeTab = StyleSheet.create({
-  containerTabDashboard: {
+const styles = StyleSheet.create({
+  container: {
     alignItems: 'center',
-    marginTop: 10,
-    padding: 30
+    flex: 1,
+    justifyContent: 'center'
   },
-  descriptionTabDashboard: {
-    color: 'green',
-    fontSize: 22,
-    marginBottom: 5,
-    marginTop: 5,
-    textAlign: 'center'
+  textTitle: {
+    color: '#FF7C00',
+    fontSize: 40,
+    margin: 10,
+    marginTop: '20%',
+    textAlign: 'left',
+    textDecorationStyle: 'solid',
+    width: '50%'
   },
-  titleTabDashboard: {
-    color: 'black',
-    fontSize: 30,
-    marginBottom: 0,
-    textAlign: 'center'
+  scrollview: {
+    flex: 1,
+    flexDirection: 'column'
   }
 });
 
-export default stylesHomeTab;
+export default styles;

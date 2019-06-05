@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Text, ScrollView, View } from 'react-native';
 
+import styles from './styles';
+
 export default class FeedbackClimate extends React.Component {
   constructor(props) {
     super(props);

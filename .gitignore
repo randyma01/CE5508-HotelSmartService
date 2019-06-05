@@ -15,13 +15,18 @@ npm-debug.*
 .bin
 .expo
 
-# -- app -- #
-#expo#
-app/hotel-smart-devices/.expo
 
+# -- testing -- #
+app/hotel-smart-devices
+
+# -- app -- #
 #depenc#
-app/hotel-smart-devices/node_modules
+app/hotel-smart-service/node_modules/
+
 
 # -- backend -- #
 
 # -- specs -- #
+specs/arquitecture/v1.0.0.pdf
+specs/arquitecture/v2.2.0.pdf
+specs/arquitecture/v2.2.1.pdf
