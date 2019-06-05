@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, ScrollView, View } from 'react-native';
 
 export default class ActivityTab extends React.Component {
   constructor(props) {
@@ -9,7 +9,9 @@ export default class ActivityTab extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>ActivityTab</Text>
+        <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
+          <Text>ActivityTab</Text>
+        </ScrollView>
       </View>
     );
   }
