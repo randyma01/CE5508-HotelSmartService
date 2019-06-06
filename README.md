@@ -4,25 +4,37 @@ The code shown above is part of the course: CE5508 - SOA41D: Service Oriented Ar
 
 \_ _El código mostrado acontinuación formar parte de curso: CE5508 - SOA41D: Arquitectura Orientanda a Servicios Aplicada a Sistemas Emergentes._ \_
 
-** README esta en construcción.**
-
 ## App 📲
+
+En construcción.
 
 ## Prerequisites 📋
 
+En construcción.
+
 ## Installing 🔧
+
+En construcción.
 
 ## Ejecutar el Programa ⚙️
 
+En construcción.
+
 ## Built With 👷🏻
+
+En construcción.
 
 ## Version 📌
 
+En construcción.
+
 ## Author ✒️
 
-- **Randy Martínez** - _Programdor, Diseñador y Constructor_ - [Git Personal](https://github.com/randyma01)
+- **Randy Martínez** - _Architect and Developer_ - [Git Personal](https://github.com/randyma01)
 
 ## Bibliography and References Used
+
+En construcción.
 
 All the credits goes to theres respective authors!
 
