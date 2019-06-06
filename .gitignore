@@ -17,7 +17,7 @@ npm-debug.*
 
 
 # -- testing -- #
-app/hotel-smart-devices
+app/hotel-smart-devices/*
 
 # -- app -- #
 #depenc#
