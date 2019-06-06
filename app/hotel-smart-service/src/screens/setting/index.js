@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Text, ScrollView, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
-import { loadSettings, saveSettings } from '../../storage/storage'; // function of storage
+import { loadSettings, saveSettings } from '../../storage/settingStorage'; // function of storage
 
 import SettingsList from '../../components/settingsList'; // components of ui of lanuage selector
 
-import LanguageScreen from '../language/index';
-import ContactScreen from '../contact/index';
+import LanguageScreen from '../language/index'; //screen
+import ContactScreen from '../contact/index'; //screan
 
 import styles from './styles';
 
@@ -35,7 +35,6 @@ class SettingScreen extends React.Component {
     return (
       <View style={styles.mainView}>
         <ScrollView style={styles.scrollView}>
-          {/* <Text style={styles.header}>Extras</Text> */}
           <SettingsList
             onPressItem={screen => this.props.navigation.navigate(screen)}
           />
@@ -46,7 +45,7 @@ class SettingScreen extends React.Component {
 }
 
 const SettingNavigator = createStackNavigator({
-  Setting: SettingScreen,
+  Settings: SettingScreen,
   Language: LanguageScreen,
   Contact: ContactScreen
 });

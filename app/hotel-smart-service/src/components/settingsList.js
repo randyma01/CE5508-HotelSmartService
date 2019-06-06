@@ -5,7 +5,7 @@ import SettingsListItem from './settingsListItem';
 
 const settings = [
   {
-    name: 'Display Language',
+    name: 'Language',
     screen: 'Language'
   },
   {

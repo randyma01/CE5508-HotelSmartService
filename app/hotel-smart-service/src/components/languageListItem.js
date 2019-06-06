@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { MaterialCommunityIcons } from 'react-native-vector-icons';
+import { Ionicons } from 'react-native-vector-icons';
 
 class LanguageListItem extends React.Component {
   constructor(props) {
@@ -33,9 +33,9 @@ class LanguageListItem extends React.Component {
           )}
         </View>
         {this.props.isActive && (
-          <MaterialCommunityIcons
+          <Ionicons
             style={styles.active}
-            name='check-circle-outline'
+            name='ios-checkmark-circle-outline'
             size={30}
           />
         )}

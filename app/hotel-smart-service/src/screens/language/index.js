@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import LanguageListItem from '../../components/languageListItem';
+import LanguageListItem from '../../components/languageListItem'; //component of available languages
 
 const languages = [
   {
@@ -17,7 +17,12 @@ const languages = [
 
 class LanguageScreen extends React.Component {
   static navigationOptions = {
-    title: 'Language'
+    title: 'Language',
+    headerTitleStyle: {
+      color: '#FF7C00',
+      fontSize: 28,
+      fontWeight: 'bold'
+    }
   };
 
   render() {
@@ -29,7 +34,7 @@ class LanguageScreen extends React.Component {
         {languages.map(language => (
           <LanguageListItem
             key={language.locale}
-            isActive={language.locale === currentLocale}
+            isActive={language.locale === 'en'}
             locale={language.locale}
             name={language.name}
             englishName={language.englishName}
