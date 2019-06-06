@@ -6,27 +6,27 @@ The code shown above is part of the course: CE5508 - SOA41D: Service Oriented Ar
 
 ## App 📲
 
-En construcción.
+In construction.
 
 ## Prerequisites 📋
 
-En construcción.
+In construction.
 
 ## Installing 🔧
 
-En construcción.
+In construction.
 
-## Ejecutar el Programa ⚙️
+## Run the App ⚙️
 
-En construcción.
+In construction.
 
 ## Built With 👷🏻
 
-En construcción.
+In construction.
 
 ## Version 📌
 
-En construcción.
+In construction.
 
 ## Author ✒️
 
