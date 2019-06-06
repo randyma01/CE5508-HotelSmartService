@@ -1,17 +1,26 @@
 import * as React from 'react';
-import { Text, createStackNavigator, ScrollView, View } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { Text, ScrollView, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
-import { loadSettings, saveSettings } from '../../storage/storage';
+import { loadSettings, saveSettings } from '../../storage/storage'; // function of storage
 
-import SettingsList from '../../components/settingsList';
+import SettingsList from '../../components/settingsList'; // components of ui of lanuage selector
 
-import LanguageScreen from '../languaje/index';
+import LanguageScreen from '../language/index';
 import ContactScreen from '../contact/index';
 
 import styles from './styles';
 
-export default class SettingScreen extends React.Component {
+class SettingScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Settings',
+    headerTitleStyle: {
+      color: '#FF7C00',
+      fontSize: 28,
+      fontWeight: 'bold'
+    }
+  };
+
   constructor(props) {
     super(props);
   }
@@ -26,18 +35,20 @@ export default class SettingScreen extends React.Component {
     return (
       <View style={styles.mainView}>
         <ScrollView style={styles.scrollView}>
-          <Text style={styles.header}>Extras</Text>
-          <SettingsList />
+          {/* <Text style={styles.header}>Extras</Text> */}
+          <SettingsList
+            onPressItem={screen => this.props.navigation.navigate(screen)}
+          />
         </ScrollView>
       </View>
     );
   }
 }
 
-/* const SettingTabNavigator = createStackNavigator({
+const SettingNavigator = createStackNavigator({
   Setting: SettingScreen,
   Language: LanguageScreen,
   Contact: ContactScreen
 });
 
-export default SettingTabNavigator; */
+export default SettingNavigator;

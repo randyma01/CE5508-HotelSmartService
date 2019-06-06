@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Ionicons } from 'react-native-vector-icons';
 
 class SettingsListItem extends React.Component {
   render() {
     return (
-      <View style={styles.listItem}>
+      <TouchableOpacity style={styles.listItem} onPress={this.props.onPress}>
         <Text style={styles.listItemText}>{this.props.title}</Text>
-        <Icon style={styles.icon} name='ios-arrow-forward' size={25} />
-      </View>
+        <Ionicons style={styles.icon} name='ios-arrow-forward' size={25} />
+      </TouchableOpacity>
     );
   }
 }
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     width: '90%'
   },
   icon: {
-    color: '#CCCCCC',
+    color: '#FF7C00',
     paddingLeft: 5
   }
 });

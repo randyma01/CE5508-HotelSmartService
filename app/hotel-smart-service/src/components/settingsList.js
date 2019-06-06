@@ -1,17 +1,16 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 
 import SettingsListItem from './settingsListItem';
 
 const settings = [
   {
-    name: 'Display language'
+    name: 'Display Language',
+    screen: 'Language'
   },
   {
-    name: 'Contact'
-  },
-  {
-    name: 'Social Media'
+    name: 'Contact',
+    screen: 'Contact'
   }
 ];
 
@@ -20,7 +19,11 @@ class SettingsList extends React.Component {
     return (
       <View>
         {settings.map(item => (
-          <SettingsListItem key={item.name} title={item.name} />
+          <SettingsListItem
+            key={item.name}
+            title={item.name}
+            onPress={() => this.props.onPressItem(item.screen)}
+          />
         ))}
       </View>
     );

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Alert, Button, Text, TouchableOpacity, View } from 'react-native';
 import {
   createAppContainer,
   createBottomTabNavigator,
@@ -13,6 +12,9 @@ import SettingScreen from './src/screens/setting/index';
 import FeedbackScreen from './src/screens/feedback/index';
 import HomeScreen from './src/screens/home/index';
 import ReservationScreen from './src/screens/reservation/index';
+
+/* import LanguageScreen from './src/screens/language/index';
+import ContactScreen from './src/screens/contact/index'; */
 
 import styles from './src/styles/styles';
 
@@ -104,14 +106,5 @@ const AppNavigator = createBottomTabNavigator(
     }
   }
 );
-
-/* const HomeNavigator = createSwitchNavigator({
-  Home: HomeScreen,
-  Activity: ActivityScreen,
-  Climate: ClimateScreen,
-  Extras: ExtrasScreen,
-  Feedback: FeedbackScreen,
-  RSVN: ReservationScreen
-}); */
 
 export default createAppContainer(AppNavigator);
