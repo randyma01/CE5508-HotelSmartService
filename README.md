@@ -6,11 +6,11 @@ The code shown above is part of the course: CE5508 - SOA41D: Service Oriented Ar
 
 ** README esta en construcción.**
 
-# App 📲
+## App 📲
 
 ## Prerequisites 📋
 
-### Installing 🔧
+## Installing 🔧
 
 ## Ejecutar el Programa ⚙️
 
@@ -24,23 +24,26 @@ The code shown above is part of the course: CE5508 - SOA41D: Service Oriented Ar
 
 ## Bibliography and References Used
 
-(All the credits goes to theres respective authors!)
+All the credits goes to theres respective authors!
 
 - React Native Signin and Signup with AWS Cognito\*
   Tutorial by Eng. Alberto Aragón Alvarez from Altura Soluciones. The code shown in the tutorial was a guide
   to build this feature on the project.
-  (https://medium.com/alturasoluciones/react-native-signin-and-signup-with-aws-cognito-2a285599b7c4)
-  (https://github.com/albertoaa/rn_aws_cognito_demo)
+
+  - (https://medium.com/alturasoluciones/react-native-signin-and-signup-with-aws-cognito-2a285599b7c4)
+  - (https://github.com/albertoaa/rn_aws_cognito_demo)
 
 - Screens, TabNavigations, Storage, Components, Language Translation, Redux\*
   Tutorial by Vitalt Tatarintsev. The code shown the tutorial is a serie of differents articles publihed to
   teach how to build a complete App using most of the React Native tools. The code build in the project (SHS)
   is heavily based in the one of the tutorial. All the respective changes and adjustment were made in order
   to fulfill the needs of the project (SHS). The code of the app was use a guide.
-  (https://whatdidilearn.info/tags#BlitzReading)
-  (https://github.com/ck3g/BlitzReading)
+
+  - (https://whatdidilearn.info/tags#BlitzReading)
+  - (https://github.com/ck3g/BlitzReading)
 
 * Display Multimedia\*
   Tutorial by Sumit Kumar Pradhan. The code shown in the tutorial was a guide to build this feature on the
   project.
-  (https://www.skptricks.com/2018/07/show-image-from-http-url-in-react-native.html)
+
+  - (https://www.skptricks.com/2018/07/show-image-from-http-url-in-react-native.html)
