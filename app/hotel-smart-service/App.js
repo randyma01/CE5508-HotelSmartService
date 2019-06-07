@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-  createAppContainer,
-  createBottomTabNavigator,
-  createSwitchNavigator
-} from 'react-navigation';
+import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
 import { MaterialCommunityIcons } from 'react-native-vector-icons';
 
 import ActivityScreen from './src/screens/activity/index';
@@ -13,16 +9,7 @@ import FeedbackScreen from './src/screens/feedback/index';
 import HomeScreen from './src/screens/home/index';
 import ReservationScreen from './src/screens/reservation/index';
 
-/* import LanguageScreen from './src/screens/language/index';
-import ContactScreen from './src/screens/contact/index'; */
-
 import styles from './src/styles/styles';
-
-class App extends React.Component {
-  render() {
-    return <HomeNavigator />;
-  }
-}
 
 const AppNavigator = createBottomTabNavigator(
   {
@@ -106,5 +93,20 @@ const AppNavigator = createBottomTabNavigator(
     }
   }
 );
+
+/* class App extends React.Component {
+  render() {
+    return <HomeNavigator />;
+  }
+} */
+
+/* const HomeNavigator = createSwitchNavigator({
+  Home: HomeScreen,
+  Activity: ActivityScreen,
+  Climate: ClimateScreen,
+  Extras: ExtrasScreen,
+  Feedback: FeedbackScreen,
+  RSVN: ReservationScreen
+}); */
 
 export default createAppContainer(AppNavigator);

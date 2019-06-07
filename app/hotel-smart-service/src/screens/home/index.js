@@ -12,7 +12,9 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.mainView}>
         <ScrollView style={styles.scrollview}>
-          <Text style={styles.textTitle}>Smart Hotel Services</Text>
+          <Text style={styles.textTitle}>
+            Hotel y Restaurante Costa del Sol
+          </Text>
           <Image
             style={{ width: '100%', height: 200, resizeMode: 'stretch' }}
             source={{
