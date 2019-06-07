@@ -25,3 +25,18 @@ https://github.com/ck3g/BlitzReading
 Tutorial by Sumit Kumar Pradhan. The code shown in the tutorial was a guide to build this feature on the 
 project. 
 https://www.skptricks.com/2018/07/show-image-from-http-url-in-react-native.html
+
+* Navigation or Open App that Shows Navigation*
+Tutorial by Thomas Schoffelen. The code shown in the tutorial was a guide to build this feature on the 
+project. 
+https://github.com/leanmotherfuckers/react-native-map-link
+
+*Open a WebPage or a Link*
+Tutorial by admin. The code shown in the tutorial was a guide to build this feature on the 
+project. 
+https://reactnativecode.com/open-website-url-in-default-browser/
+
+*Make Phone Calls*
+Tutorial by anon. he code shown in the tutorial was a guide to build this feature on the 
+project. 
+https://www.npmjs.com/package/react-native-phone-call

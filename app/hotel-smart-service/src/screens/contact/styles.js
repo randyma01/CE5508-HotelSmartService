@@ -2,8 +2,8 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   imageThumbnail: {
-    alignItems: 'center',
-    resizeMode: 'contain'
+    alignItems: 'center'
+    //resizeMode: 'contain'
   },
   mainView: {
     alignItems: 'center',
@@ -29,18 +29,25 @@ const styles = StyleSheet.create({
     width: '50%'
   },
   textBody: {
-    color: '#000000',
-    fontSize: 20,
+    color: '#FF7C00',
+    fontSize: 22,
+    fontWeight: 'bold',
     marginTop: '10%',
-    textAlign: 'left',
+    textAlign: 'center',
     textDecorationStyle: 'solid'
   },
   textContact: {
     color: '#000000',
-    fontSize: 20,
-    marginTop: '10%',
-    textAlign: 'left',
-    textDecorationStyle: 'solid'
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: '5%',
+    textAlign: 'center'
+  },
+  textContactData: {
+    color: '#000000',
+    fontSize: 12,
+    marginTop: '5%',
+    textAlign: 'center'
   },
   scrollview: {
     flex: 1,

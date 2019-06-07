@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
-import { MaterialCommunityIcons } from 'react-native-vector-icons';
+import { Icon } from 'react-native-elements';
 
 import ActivityScreen from './src/screens/activity/index';
 import ClimateScreen from './src/screens/climate/index';
@@ -17,7 +17,12 @@ const AppNavigator = createBottomTabNavigator(
       screen: HomeScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons name='home' size={25} color={tintColor} />
+          <Icon
+            type={'material-community'}
+            name='home'
+            size={25}
+            color={tintColor}
+          />
         )
       }
     },
@@ -26,7 +31,8 @@ const AppNavigator = createBottomTabNavigator(
       screen: ReservationScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons
+          <Icon
+            type={'material-community'}
             name='format-list-checks'
             size={25}
             color={tintColor}
@@ -39,7 +45,8 @@ const AppNavigator = createBottomTabNavigator(
       screen: ActivityScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons
+          <Icon
+            type={'material-community'}
             name='human-handsup'
             size={25}
             color={tintColor}
@@ -52,7 +59,8 @@ const AppNavigator = createBottomTabNavigator(
       screen: ClimateScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons
+          <Icon
+            type={'material-community'}
             name='white-balance-sunny'
             size={25}
             color={tintColor}
@@ -65,7 +73,8 @@ const AppNavigator = createBottomTabNavigator(
       screen: FeedbackScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons
+          <Icon
+            type={'material-community'}
             name='emoticon-happy'
             size={25}
             color={tintColor}
@@ -78,7 +87,12 @@ const AppNavigator = createBottomTabNavigator(
       screen: SettingScreen,
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
-          <MaterialCommunityIcons name='account' size={25} color={tintColor} />
+          <Icon
+            type={'material-community'}
+            name='account'
+            size={25}
+            color={tintColor}
+          />
         )
       }
     }
