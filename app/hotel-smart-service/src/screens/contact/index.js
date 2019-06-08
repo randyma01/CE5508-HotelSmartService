@@ -14,10 +14,8 @@ import { showLocation } from 'react-native-map-link';
 
 import styles from './styles';
 
-//26344008
-
 const args = {
-  number: '86183916',
+  number: '86183916', // hotel: 26344008
   prompt: false
 };
 
@@ -59,10 +57,6 @@ export default class ContactScreen extends React.Component {
       }).catch(console.error);
     }
   }
-
-  _alertFunction = () => {
-    Alert.alert('T de TESTING');
-  };
 
   render() {
     return (
