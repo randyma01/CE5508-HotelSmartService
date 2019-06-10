@@ -27,8 +27,14 @@ app/hotel-smart-service/node_modules/
 
 
 # -- backend -- #
+backend/lambda_functions/climate/
+backend/lambda_functions/climate/node_modules
+backend/lambda_functions/climate/package.json
+backend/lambda_functions/climate/package-lock.json
+
 
 # -- specs -- #
 specs/arquitecture/v1.0.0.pdf
 specs/arquitecture/v2.2.0.pdf
 specs/arquitecture/v2.2.1.pdf
+specs/arquitecture/v2.2.2.pdf
