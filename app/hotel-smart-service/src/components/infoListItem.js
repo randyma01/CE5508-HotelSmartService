@@ -1,13 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Ionicons } from 'react-native-elements';
+import { Icon } from 'react-native-elements';
 
 class InfoListItem extends React.Component {
   render() {
     return (
       <TouchableOpacity style={styles.listItem} onPress={this.props.onPress}>
         <Text style={styles.listItemText}>{this.props.title}</Text>
-        <Ionicons style={styles.icon} name='ios-arrow-forward' size={25} />
+        <Icon
+          color={'#FF7C00'}
+          name='ios-arrow-forward'
+          size={25}
+          type={'ionicon'}
+        />
       </TouchableOpacity>
     );
   }
@@ -23,7 +29,7 @@ const styles = StyleSheet.create({
   },
   listItemText: {
     color: '#434343',
-    fontSize: 18,
+    fontSize: 22,
     marginLeft: 10,
     width: '90%'
   },

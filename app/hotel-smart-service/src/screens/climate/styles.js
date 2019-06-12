@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#FF7C00',
-    fontSize: 20,
+    fontSize: 22,
     margin: 10,
     marginTop: '20%',
     textAlign: 'left',
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderRadius: 8,
     color: '#656565',
-    fontSize: 18,
+    fontSize: 22,
     height: 36,
     marginTop: 20,
     padding: 1,

@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import InfoListItem from './infoListItem';
 
-const settings = [
+const hotelInformation = [
   {
     name: 'Rooms',
     screen: 'Rooms'
@@ -18,7 +18,7 @@ class InfoList extends React.Component {
   render() {
     return (
       <View>
-        {settings.map(item => (
+        {hotelInformation.map(item => (
           <InfoListItem
             key={item.name}
             title={item.name}

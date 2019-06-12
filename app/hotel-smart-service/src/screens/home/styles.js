@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0
+  },
   header: {
     color: '#FF7C00',
     fontSize: 25,
@@ -40,8 +47,8 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     color: '#656565',
     fontSize: 18,
-    height: 36,
-    marginTop: 20,
+    //height: 36,
+    marginBottom: '5%',
     padding: 1,
     paddingBottom: 6,
     textAlign: 'center'

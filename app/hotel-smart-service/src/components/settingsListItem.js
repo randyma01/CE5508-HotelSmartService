@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   },
   listItemText: {
     color: '#434343',
-    fontSize: 18,
+    fontSize: 22,
     marginLeft: 10,
     width: '90%'
   },
