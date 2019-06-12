@@ -55,7 +55,8 @@ All the credits goes to theres respective authors!
   - (https://github.com/ck3g/BlitzReading)
 
 - Display Multimedia.
-  Tutorial by Sumit Kumar Pradhan. The code shown in the tutorial was a guide to build this feature on the
+  Tutorial by Sumit Kumar Pradhan and React Native Community. The code shown in the tutorial was a guide to build this feature on the
   project.
 
   - (https://www.skptricks.com/2018/07/show-image-from-http-url-in-react-native.html)
+  - (https://github.com/react-native-community/react-native-video)

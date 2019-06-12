@@ -40,3 +40,8 @@ https://reactnativecode.com/open-website-url-in-default-browser/
 Tutorial by anon. he code shown in the tutorial was a guide to build this feature on the 
 project. 
 https://www.npmjs.com/package/react-native-phone-call
+
+*Reac-Native-Video*
+Tutorial by React Native Community . The code shown in the tutorial was a guide to build this feature on the 
+project.
+https://github.com/react-native-community/react-native-video

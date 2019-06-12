@@ -34,7 +34,7 @@ class LanguageScreen extends React.Component {
         {languages.map(language => (
           <LanguageListItem
             key={language.locale}
-            isActive={language.locale === 'en'}
+            isActive={language.locale === currentLocale}
             locale={language.locale}
             name={language.name}
             englishName={language.englishName}

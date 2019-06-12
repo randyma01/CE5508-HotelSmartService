@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-import { createAppContainer, createBottomTabNavigator } from 'react-navigation';
+import React from 'react';
+import {
+  createAppContainer,
+  createBottomTabNavigator,
+  createSwitchNavigator
+} from 'react-navigation';
 import { Icon } from 'react-native-elements';
 
 import ActivityScreen from './src/screens/activity/index';
 import ClimateScreen from './src/screens/climate/index';
-import SettingScreen from './src/screens/setting/index';
 import FeedbackScreen from './src/screens/feedback/index';
 import HomeScreen from './src/screens/home/index';
 import ReservationScreen from './src/screens/reservation/index';
-
-import styles from './src/styles/styles';
+import SettingScreen from './src/screens/setting/index';
+import SplashScreen from './src/screens/splash/index';
 
 const AppNavigator = createBottomTabNavigator(
   {
@@ -108,19 +111,11 @@ const AppNavigator = createBottomTabNavigator(
   }
 );
 
-/* class App extends React.Component {
-  render() {
-    return <HomeNavigator />;
-  }
-} */
+const InitialNavigator = createSwitchNavigator({
+  Splash: SplashScreen,
+  App: AppNavigator
+});
 
-/* const HomeNavigator = createSwitchNavigator({
-  Home: HomeScreen,
-  Activity: ActivityScreen,
-  Climate: ClimateScreen,
-  Extras: ExtrasScreen,
-  Feedback: FeedbackScreen,
-  RSVN: ReservationScreen
-}); */
+const AppContainer = createAppContainer(InitialNavigator);
 
-export default createAppContainer(AppNavigator);
+export default AppContainer;

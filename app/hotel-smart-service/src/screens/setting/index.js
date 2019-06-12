@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ScrollView, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
-import { loadSettings, saveSettings } from '../../storage/settingStorage'; // function of storage
+import { loadSettings, saveSettings } from '../../storage/settingStorage'; // functions of storage
 
 import SettingsList from '../../components/settingsList'; // components of ui of lanuage selector
 
@@ -23,6 +23,10 @@ class SettingScreen extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = { name: '', locale: 'en' };
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   async componentDidMount() {
@@ -31,12 +35,28 @@ class SettingScreen extends React.Component {
     this.setState(initialState);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    const locale = this.props.navigation.getParam('locale', null);
+    if (locale && prevState.locale !== locale) {
+      this.setState({ locale });
+    }
+  }
+
+  handleSubmit() {
+    saveSettings(this.state);
+  }
+
   render() {
+    const currentLocale = this.state.locale;
+    const { navigation } = this.props;
+
     return (
       <View style={styles.mainView}>
         <ScrollView style={styles.scrollView}>
           <SettingsList
-            onPressItem={screen => this.props.navigation.navigate(screen)}
+            onPressItem={screen =>
+              navigation.navigate(screen, { currentLocale })
+            }
           />
         </ScrollView>
       </View>

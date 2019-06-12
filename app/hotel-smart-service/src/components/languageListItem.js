@@ -5,9 +5,10 @@ import { Ionicons } from 'react-native-vector-icons';
 class LanguageListItem extends React.Component {
   constructor(props) {
     super(props);
+    this.handleLocaleChange = this.handleLocaleChange.bind(this);
   }
 
-  _handleLocaleChange = () => {
+  handleLocaleChange() {
     Alert.alert('Change language?', null, [
       { text: 'Cancel', style: 'cancel' },
       {
@@ -16,13 +17,13 @@ class LanguageListItem extends React.Component {
         style: 'destructive'
       }
     ]);
-  };
+  }
 
   render() {
     return (
       <TouchableOpacity
         style={styles.listItem}
-        onPress={this._handleLocaleChange}
+        onPress={this.handleLocaleChange}
       >
         <View style={styles.textWrapper}>
           <Text style={[styles.title, this.props.isActive && styles.active]}>
