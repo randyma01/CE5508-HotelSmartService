@@ -14,6 +14,7 @@ npm-debug.*
 **/.bin
 .bin
 .expo
+.expo-shared
 
 
 
@@ -27,6 +28,10 @@ app/hotel-smart-service/node_modules/
 
 
 # -- backend -- #
+#content manager#
+backend/content_manager/costa_del_sol/node_modules
+
+#lambda functions#
 backend/lambda_functions/climate/
 backend/lambda_functions/climate/node_modules
 backend/lambda_functions/climate/package.json
@@ -38,3 +43,5 @@ specs/arquitecture/v1.0.0.pdf
 specs/arquitecture/v2.2.0.pdf
 specs/arquitecture/v2.2.1.pdf
 specs/arquitecture/v2.2.2.pdf
+specs/arquitecture/v2.3.0.pdf
+specs/arquitecture/v3.0.0.pdf
