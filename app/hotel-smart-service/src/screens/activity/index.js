@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, ScrollView, View } from 'react-native';
 
+import i18n from '../../i18n';
 import styles from './styles';
 
 export default class ActivityScreen extends React.Component {

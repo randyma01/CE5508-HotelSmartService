@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   textContactData: {
     color: '#656565',
-    fontSize: 12,
+    fontSize: 16,
     marginTop: '5%',
     textAlign: 'center'
   },

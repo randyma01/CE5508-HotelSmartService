@@ -1,6 +1,5 @@
 import * as React from 'react';
 import {
-  Alert,
   FlatList,
   Linking,
   Text,
@@ -15,7 +14,7 @@ import { showLocation } from 'react-native-map-link';
 import styles from './styles';
 
 const args = {
-  number: '86183916', // hotel: 26344008
+  number: '89989725', // hotel: 26344008
   prompt: false
 };
 
@@ -39,9 +38,11 @@ export default class ContactScreen extends React.Component {
         { key: 'Waze', icon: 'directions' }
       ]
     };
+
+    this.selectGridItem = this.selectGridItem.bind(this);
   }
 
-  _selectGridItem(item) {
+  selectGridItem(item) {
     if (item === 'Facebook') {
       Linking.openURL('https://www.facebook.com/Costadelsolcr/');
     } else if (item === 'Web') {
@@ -85,8 +86,7 @@ export default class ContactScreen extends React.Component {
               <View style={styles.gridViewColumns}>
                 <TouchableHighlight
                   underlayColor={'#FF7C00'}
-                  onPress={this._selectGridItem.bind(this, item.key)}
-                  //onPress={this._alertFunction()}
+                  onPress={this.selectGridItem.bind(this, item.key)}
                 >
                   <Icon
                     style={styles.imageThumbnail}

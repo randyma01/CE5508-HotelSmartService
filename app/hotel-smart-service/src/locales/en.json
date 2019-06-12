@@ -1,0 +1,27 @@
+{
+  "appName": "Blitz Reading",
+  "navigation": {
+    "Activity": "Activity",
+    "Climate": "Climate",
+    "Contact": "Contact",
+    "Feedback": "Feedback",
+    "Home": "Home",
+    "Language": "Language",
+    "Rooms": "Rooms",
+    "RSVN": "RSVN",
+    "Service": "Service",
+    "Settings": "Seetings"
+  },
+  "Activity": {},
+  "Climate": {},
+  "Contact": {},
+  "Feedback": {},
+  "Home": {
+    "welcome": "Welcome to %{appName}!"
+  },
+  "Language": {},
+  "Rooms": {},
+  "RSVN": {},
+  "Service": {},
+  "Settings": {}
+}

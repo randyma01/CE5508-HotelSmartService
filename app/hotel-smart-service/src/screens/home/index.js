@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Image, Text, ScrollView, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
+
+//
 //import Video from 'react-native-video';
-import { Video } from 'expo';
+//import { Video } from 'expo';
+//
 
 import InfoList from '../../components/infoList'; // components of ui of lanuage selector
 
