@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   header: {
     color: '#FF7C00',
-    fontSize: 25,
+    fontSize: 28,
     textAlign: 'center',
     margin: 10,
     fontWeight: 'bold'

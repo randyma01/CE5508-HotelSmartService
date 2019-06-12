@@ -18,10 +18,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='home'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -32,10 +32,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='format-list-checks'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -46,10 +46,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='human-handsup'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -60,10 +60,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='white-balance-sunny'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -74,10 +74,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='emoticon-happy'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -88,10 +88,10 @@ const AppNavigator = createBottomTabNavigator(
       navigationOptions: {
         tabBarIcon: ({ tintColor }) => (
           <Icon
-            type={'material-community'}
+            color={tintColor}
             name='account'
             size={25}
-            color={tintColor}
+            type={'material-community'}
           />
         )
       }
@@ -101,9 +101,9 @@ const AppNavigator = createBottomTabNavigator(
   {
     tabBarOptions: {
       activeTintColor: '#FF7C00',
+      adaptive: true,
       inactiveTintColor: '#8E8E8E',
-      showLabel: true,
-      adaptive: true
+      showLabel: true
     }
   }
 );

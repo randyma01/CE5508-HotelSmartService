@@ -46,18 +46,18 @@ class LanguageListItem extends React.Component {
 
 const styles = StyleSheet.create({
   listItem: {
-    flexDirection: 'row',
-    alignItems: 'flex-end',
     alignItems: 'center',
+    alignItems: 'flex-end',
+    flexDirection: 'row',
     padding: 10
   },
   textWrapper: {
-    width: '90%',
-    marginLeft: 10
+    marginLeft: 10,
+    width: '90%'
   },
   title: {
-    fontSize: 18,
-    color: '#434343'
+    color: '#434343',
+    fontSize: 18
   },
   subtitle: {
     color: '#AAAAAA'

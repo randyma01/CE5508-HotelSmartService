@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { Ionicons } from 'react-native-vector-icons';
+import { Ionicons } from 'react-native-elements';
 
-class SettingsListItem extends React.Component {
+class InfoListItem extends React.Component {
   render() {
     return (
       <TouchableOpacity style={styles.listItem} onPress={this.props.onPress}>
@@ -33,4 +33,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default SettingsListItem;
+export default InfoListItem;

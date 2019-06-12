@@ -6,8 +6,8 @@ import { loadSettings, saveSettings } from '../../storage/settingStorage'; // fu
 
 import SettingsList from '../../components/settingsList'; // components of ui of lanuage selector
 
-import LanguageScreen from '../language/index'; //screen
-import ContactScreen from '../contact/index'; //screan
+import LanguageScreen from '../language/index'; //screen languages
+import ContactScreen from '../contact/index'; //screen contact and info
 
 import styles from './styles';
 

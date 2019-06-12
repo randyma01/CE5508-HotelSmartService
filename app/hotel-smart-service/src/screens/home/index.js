@@ -1,9 +1,23 @@
 import * as React from 'react';
 import { Image, Text, ScrollView, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
+
+import InfoList from '../../components/infoList'; // components of ui of lanuage selector
+
+import RoomScreen from '../room/index'; //screen rooms
+import ServiceScreen from '../service/index'; //screen services
 
 import styles from './styles';
 
-export default class HomeScreen extends React.Component {
+class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Costa del Sol',
+    headerTitleStyle: {
+      color: '#FF7C00',
+      fontSize: 28,
+      fontWeight: 'bold'
+    }
+  };
   constructor(props) {
     super(props);
   }
@@ -12,9 +26,8 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.mainView}>
         <ScrollView style={styles.scrollview}>
-          <Text style={styles.textTitle}>
-            Hotel y Restaurante Costa del Sol
-          </Text>
+          {/*           <Text style={styles.header}>Hotel y Restaurante Costa del Sol</Text>
+           */}
           <Image
             style={{ width: '100%', height: 200, resizeMode: 'stretch' }}
             source={{
@@ -26,3 +39,11 @@ export default class HomeScreen extends React.Component {
     );
   }
 }
+
+const HomeNavigator = createStackNavigator({
+  Home: HomeScreen,
+  Rooms: RoomScreen,
+  Services: ServiceScreen
+});
+
+export default HomeNavigator;

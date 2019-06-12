@@ -37,14 +37,14 @@ const styles = StyleSheet.create({
     textDecorationStyle: 'solid'
   },
   textContact: {
-    color: '#000000',
+    color: '#FF7C00',
     fontSize: 18,
     fontWeight: 'bold',
     marginTop: '5%',
     textAlign: 'center'
   },
   textContactData: {
-    color: '#000000',
+    color: '#656565',
     fontSize: 12,
     marginTop: '5%',
     textAlign: 'center'
