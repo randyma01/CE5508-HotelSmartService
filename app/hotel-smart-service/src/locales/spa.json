@@ -1,0 +1,41 @@
+{
+  "AppName": "Smart Hotel Service",
+  "Navigation": {
+    "Activity": "Actividades",
+    "Climate": "Clima",
+    "Contact": "Contacto",
+    "Feedback": "Opiniones",
+    "Home": "Casa",
+    "Language": "Idioma",
+    "Rooms": "Habitaciones",
+    "RSVN": "RSVN",
+    "Service": "Servicios",
+    "Settings": "Ajustes"
+  },
+  "Activity": {
+    "activity": "Actividades"
+  },
+  "Climate": {
+    "Climate": "Clima"
+  },
+  "Contact": {},
+  "Feedback": {},
+  "Home": {
+    "welcome": "Bienvenido!"
+  },
+  "Languages": {
+    "change_language": "¿Desea cambiar el idioma?",
+    "ok": "Aceptar",
+    "cancel": "Cancelar"
+  },
+  "Rooms": {
+    "rooms": "Habitaciones"
+  },
+  "RSVN": {
+    "reservations": "Reservaciones"
+  },
+  "Service": {
+    "menu": "Platillos",
+    "sky_diving": "Paracaidismo"
+  }
+}

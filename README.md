@@ -22,19 +22,22 @@ In construction.
 
 ## Built With 👷🏻
 
-In construction.
+- NodeJS: Javascript runtime environment. (v10.16.0)
+- NPM: Package manaher for Node.js (v6.9.0)
+- Expo SDK and ExpoCLI: Toolchain built upon React Native for hybrid mobile apps. (v2.19.5)
+- AWS: Cloud service for development. In this system were used: AWS Simplify (DynamoDB, Cognito, )
+- APIXU API: Weather and Climate API.
+- Sanity.io: Content Manager System for deploying all the data. (v0.140.33)
 
 ## Version 📌
 
-In construction.
+Actual version: v1.0.0.
 
 ## Author ✒️
 
 - **Randy Martínez** - _Architect and Developer_ - [Git Personal](https://github.com/randyma01)
 
 ## Bibliography and References Used
-
-En construcción.
 
 All the credits goes to theres respective authors!
 
@@ -60,3 +63,9 @@ All the credits goes to theres respective authors!
 
   - (https://www.skptricks.com/2018/07/show-image-from-http-url-in-react-native.html)
   - (https://github.com/react-native-community/react-native-video)
+
+- Sanity.io for CMS
+  Tutorial by Knut Melvæ. The code shown in the tutorial was a guide to build this feature on the
+  project.
+  - (https://www.youtube.com/watch?v=2ceM_tSus_M)
+  - (https://www.sanity.io/docs/)

@@ -2,6 +2,8 @@ import React from 'react';
 import { Alert, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from 'react-native-vector-icons';
 
+import i18n from '../common/i18n';
+
 class LanguageListItem extends React.Component {
   constructor(props) {
     super(props);
@@ -9,10 +11,13 @@ class LanguageListItem extends React.Component {
   }
 
   handleLocaleChange() {
-    Alert.alert('Change language?', null, [
-      { text: 'Cancel', style: 'cancel' },
+    Alert.alert(i18n.t('Languages.change_language'), null, [
       {
-        text: 'Change',
+        text: i18n.t('Languages.cancel'),
+        style: 'cancel'
+      },
+      {
+        text: i18n.t('Languages.ok'),
         onPress: () => this.props.onChangeLocale(this.props.locale),
         style: 'destructive'
       }

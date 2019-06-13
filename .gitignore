@@ -23,10 +23,9 @@ app/hotel-smart-devices/*
 #depenc#
 app/hotel-smart-service/node_modules/
 
-
 # -- backend -- #
 #content manager#
-backend/content_manager/costa_del_sol/node_modules
+backend/content_manager/sanity_server/node_modules
 
 #lambda functions#
 backend/lambda_functions/climate/

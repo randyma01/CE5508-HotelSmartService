@@ -1,6 +1,6 @@
 {
-  "appName": "Blitz Reading",
-  "navigation": {
+  "AppName": "Smart Hotel Service",
+  "Navigation": {
     "Activity": "Activity",
     "Climate": "Climate",
     "Contact": "Contact",
@@ -12,16 +12,30 @@
     "Service": "Service",
     "Settings": "Seetings"
   },
-  "Activity": {},
-  "Climate": {},
+  "Activity": {
+    "activity": "Activities"
+  },
+  "Climate": {
+    "climate": "Climate"
+  },
   "Contact": {},
   "Feedback": {},
   "Home": {
     "welcome": "Welcome to %{appName}!"
   },
-  "Language": {},
-  "Rooms": {},
-  "RSVN": {},
-  "Service": {},
-  "Settings": {}
+  "Languages": {
+    "change_language": "Change language?",
+    "ok": "Change",
+    "cancel": "Cancel"
+  },
+  "Rooms": {
+    "rooms": "Rooms"
+  },
+  "RSVN": {
+    "reservations": "Reservations"
+  },
+  "Service": {
+    "menu": "Menu",
+    "sky_diving": "Sky Diving"
+  }
 }

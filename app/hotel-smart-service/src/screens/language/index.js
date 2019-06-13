@@ -1,6 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
 
+import i18n from '../../common/i18n';
+
 import LanguageListItem from '../../components/languageListItem'; //component of available languages
 
 const languages = [

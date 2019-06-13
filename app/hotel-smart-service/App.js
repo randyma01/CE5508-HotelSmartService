@@ -118,4 +118,10 @@ const InitialNavigator = createSwitchNavigator({
 
 const AppContainer = createAppContainer(InitialNavigator);
 
-export default AppContainer;
+class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
+
+export default App;

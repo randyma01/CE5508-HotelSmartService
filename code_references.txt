@@ -41,7 +41,13 @@ Tutorial by anon. he code shown in the tutorial was a guide to build this featur
 project. 
 https://www.npmjs.com/package/react-native-phone-call
 
-*Reac-Native-Video*
-Tutorial by React Native Community . The code shown in the tutorial was a guide to build this feature on the 
+*React-Native-Video*
+Tutorial by React Native Community. The code shown in the tutorial was a guide to build this feature on the 
 project.
 https://github.com/react-native-community/react-native-video
+
+*Sanity.io for CMS*
+Tutorial by Knut Melvæ. The code shown in the tutorial was a guide to build this feature on the 
+project. 
+https://www.youtube.com/watch?v=2ceM_tSus_M
+https://www.sanity.io/docs/
