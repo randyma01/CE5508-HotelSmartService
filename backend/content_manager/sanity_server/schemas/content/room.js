@@ -42,15 +42,14 @@ export default {
       required: true
     },
     {
-      name: 'avaiable',
-      title: 'Disponible',
-      type: 'boolean',
-      required: true
+      name: 'imageRoom',
+      title: 'Imagen Habitación',
+      type: 'image'
     },
     {
+      name: 'imageUrl',
       title: 'Image URL',
-      name: 'Imagen',
-      type: 'image'
+      type: 'url'
     },
     {
       name: 'description',

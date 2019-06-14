@@ -7,7 +7,7 @@ import menu from './content/menu';
 //import product from './content/product';
 import productVariant from './productVariant';
 import room from './content/room';
-import service from './content/service';
+import activity from './content/activity';
 //import vendor from './content/vendor';
 
 import localeString from './locale/String';
@@ -23,7 +23,7 @@ export default createSchema({
     menu,
     //product,
     //vendor,
-    service,
+    activity,
     room,
     /*structure for schemas */
     blockContent,

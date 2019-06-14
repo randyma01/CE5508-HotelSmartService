@@ -1,0 +1,10 @@
+*[_type == 'room'] | {
+  room,
+  beds,
+  price,
+  tv,
+  balcony,
+  imageUrl
+}
+
+https://7yrptxv6.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'room'%5D%20%7C%20%7B%0A%20%20room%2C%0A%20%20beds%2C%0A%20%20price%2C%0A%20%20tv%2C%0A%20%20balcony%2C%0A%20%20imageUrl%0A%7D

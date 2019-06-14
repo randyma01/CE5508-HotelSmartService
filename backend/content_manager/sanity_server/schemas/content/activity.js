@@ -1,10 +1,10 @@
 export default {
-  name: 'service',
-  title: 'Servicios',
+  name: 'activity',
+  title: 'Actividades',
   type: 'document',
   fields: [
     {
-      name: 'activitis',
+      name: 'activity',
       title: 'Nombre',
       type: 'string'
     },
@@ -36,15 +36,20 @@ export default {
       required: true
     },
     {
-      name: 'avaiable',
+      name: 'available',
       title: 'Available',
       type: 'boolean',
       required: true
     },
     {
-      name: 'imageUrl',
-      title: 'Imagen',
+      name: 'imagesActivities',
+      title: 'Imagen Actividades',
       type: 'image'
+    },
+    {
+      name: 'imageUrl',
+      title: 'Image URL',
+      type: 'url'
     },
     {
       name: 'description',

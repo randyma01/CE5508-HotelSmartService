@@ -23,15 +23,20 @@ export default {
       }
     },
     {
-      name: 'avaiable',
-      title: 'Available',
+      name: 'available',
+      title: 'En la carta',
       type: 'boolean',
       required: true
     },
     {
-      title: 'Image URL',
-      name: 'imageUrl',
+      name: 'imageFood',
+      title: 'Image',
       type: 'image'
+    },
+    {
+      name: 'imageUrl',
+      title: 'Image URL',
+      type: 'url'
     },
     {
       name: 'description',
