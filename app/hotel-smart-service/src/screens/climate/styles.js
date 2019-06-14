@@ -36,6 +36,11 @@ const styles = StyleSheet.create({
     paddingLeft: 10,
     color: '#FF7C00'
   },
+  subRatingText: {
+    textAlign: 'left',
+    paddingLeft: 0,
+    color: '#FF7C00'
+  },
   scrollView: {
     flex: 1,
     flexDirection: 'column'
@@ -47,6 +52,13 @@ const styles = StyleSheet.create({
   },
   subtitleView: {
     flexDirection: 'row',
+    //justifyContent: 'space-between',
+    paddingLeft: 10,
+    paddingTop: 5
+  },
+  subSubtitleView: {
+    flexDirection: 'row',
+    //justifyContent: 'space-between',
     paddingLeft: 10,
     paddingTop: 5
   },

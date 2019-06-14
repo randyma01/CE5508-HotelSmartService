@@ -43,11 +43,9 @@ const styles = StyleSheet.create({
     textDecorationStyle: 'solid'
   },
   textInfo: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
     borderRadius: 8,
     color: '#656565',
     fontSize: 18,
-    //height: 36,
     marginBottom: '5%',
     padding: 1,
     paddingBottom: 6,

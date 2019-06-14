@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { FlatList, RefreshControl, Text, View } from 'react-native';
-import { ListItem } from 'react-native-elements';
+import { Card, ListItem } from 'react-native-elements';
 
 import styles from './styles';
 
-export default class RoomScreen extends React.Component {
+export default class RestaurantScreen extends React.Component {
   static navigationOptions = {
-    title: 'Rooms Available',
+    title: 'Menu',
     headerTitleStyle: {
       color: '#FF7C00',
       fontSize: 28,
@@ -20,8 +20,8 @@ export default class RoomScreen extends React.Component {
     this.state = {
       isLoading: false,
       refreshing: false,
-      hotel: [],
-      rooms: []
+      menu: [],
+      restaurant: []
     };
   }
 
@@ -35,7 +35,7 @@ export default class RoomScreen extends React.Component {
           const parseResponse = JSON.stringify(responseJson);
           if (parseResponse != '') {
             this.setState({
-              weather: JSON.parse(parseResponse)
+              menu: JSON.parse(parseResponse)
             });
             setTimeout(
               () =>
@@ -44,7 +44,7 @@ export default class RoomScreen extends React.Component {
                     return {
                       key: index,
                       dish: item.dish,
-                      //image: item.imageUrl,
+                      image: item.imageUrl,
                       ingredients: item.ingredients
                     };
                   })
@@ -62,15 +62,14 @@ export default class RoomScreen extends React.Component {
   _keyExtractor = (item, index) => index.toString();
 
   _renderItem = ({ item }) => (
-    <ListItem
-      title={item.index}
-      subtitle={
-        <View style={styles.subtitleView}>
-          {/*           <Text style={styles.ratingText}>{item.ingredients}</Text>
-           */}
-        </View>
-      }
-    />
+    <Card
+      containerStyle={styles.card}
+      title={item.dish}
+      key={item.key}
+      image={{ uri: item.image }}
+    >
+      <Text style={styles.textIngredients}>{item.ingredients}</Text>
+    </Card>
   );
 
   render() {
@@ -83,9 +82,10 @@ export default class RoomScreen extends React.Component {
     } else {
       return (
         <View style={styles.mainView}>
+          <Text style={styles.textInfo}>Our finest!</Text>
           {
             <FlatList
-              keyExtractor={this._keyExtractor.bind}
+              keyExtractor={this._keyExtractor}
               data={this.state.restaurant}
               renderItem={this._renderItem}
               refreshControl={

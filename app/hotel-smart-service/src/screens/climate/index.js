@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FlatList, RefreshControl, Text, TextInput, View } from 'react-native';
+import { FlatList, RefreshControl, Text, View } from 'react-native';
 import { ListItem } from 'react-native-elements';
 
 import styles from './styles';
@@ -10,7 +10,9 @@ export default class ClimateScreen extends React.Component {
 
     this.state = {
       isLoading: false,
-      refreshing: false
+      refreshing: false,
+      climate: [],
+      weather: []
     };
   }
 
@@ -24,22 +26,25 @@ export default class ClimateScreen extends React.Component {
           const parseResponse = JSON.stringify(responseJson);
           if (parseResponse != '') {
             this.setState({
-              weather: JSON.parse(parseResponse)
+              climate: JSON.parse(parseResponse)
             });
             setTimeout(
               () =>
                 this.setState({
-                  weatherday: this.state.weather.forecast.forecastday.map(
-                    function(item, index) {
-                      return {
-                        key: index,
-                        date: item.date,
-                        temp: item.day.avgtemp_c,
-                        condition: item.day.condition.text,
-                        icon: 'http://' + item.day.condition.icon
-                      };
-                    }
-                  )
+                  weather: this.state.climate.forecast.forecastday.map(function(
+                    item,
+                    index
+                  ) {
+                    return {
+                      key: index,
+                      date: item.date,
+                      temp: item.day.avgtemp_c,
+                      condition: item.day.condition.text,
+                      icon: 'http://' + item.day.condition.icon,
+                      sunrise: item.astro.sunrise,
+                      sunset: item.astro.sunset
+                    };
+                  })
                 }),
               2000
             );
@@ -51,15 +56,21 @@ export default class ClimateScreen extends React.Component {
       });
   }
 
-  keyExtractor = (item, index) => index.toString();
+  _keyExtractor = (item, index) => index.toString();
 
-  renderItem = ({ item }) => (
+  _renderItem = ({ item }) => (
     <ListItem
       title={item.date}
       subtitle={
         <View style={styles.subtitleView}>
-          <Text style={styles.ratingText}>{item.condition}</Text>
+          <Text style={styles.ratingText}>{item.condition}.</Text>
           <Text style={styles.ratingText}>{item.temp}°C</Text>
+          {/* <View style={styles.subSubtitleView}>
+            <Text style={styles.subRatingText}>Sunrise:</Text>
+            <Text style={styles.subRatingText}>{item.sunrise}</Text>
+            <Text style={styles.subRatingText}>Sunset:</Text>
+            <Text style={styles.subRatingText}>{item.sunrise}</Text>
+          </View> */}
         </View>
       }
       leftAvatar={{ source: { uri: item.icon } }}
@@ -81,9 +92,9 @@ export default class ClimateScreen extends React.Component {
             Weather for the following seven days.
           </Text>
           <FlatList
-            keyExtractor={this.keyExtractor}
-            data={this.state.weatherday}
-            renderItem={this.renderItem}
+            keyExtractor={this._keyExtractor}
+            data={this.state.weather}
+            renderItem={this._renderItem}
             refreshControl={
               <RefreshControl
                 refreshing={this.state.refreshing}

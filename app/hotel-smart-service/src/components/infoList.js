@@ -5,12 +5,12 @@ import InfoListItem from './infoListItem';
 
 const hotelInformation = [
   {
-    name: 'Rooms',
-    screen: 'Rooms'
+    name: 'Restaurant',
+    screen: 'Restaurant'
   },
   {
-    name: 'Services',
-    screen: 'Services'
+    name: 'Rooms',
+    screen: 'Rooms'
   }
 ];
 

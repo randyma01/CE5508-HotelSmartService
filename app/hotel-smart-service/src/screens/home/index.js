@@ -10,7 +10,7 @@ import { createStackNavigator } from 'react-navigation';
 import InfoList from '../../components/infoList'; // components of ui of lanuage selector
 
 import RoomScreen from '../room/index'; //screen rooms
-import ServiceScreen from '../service/index'; //screen services
+import RestaurantScreen from '../restaurant/index'; //screen services
 
 import styles from './styles';
 
@@ -61,8 +61,8 @@ class HomeScreen extends React.Component {
 
 const HomeNavigator = createStackNavigator({
   Home: HomeScreen,
-  Rooms: RoomScreen,
-  Services: ServiceScreen
+  Restaurant: RestaurantScreen,
+  Rooms: RoomScreen
 });
 
 export default HomeNavigator;

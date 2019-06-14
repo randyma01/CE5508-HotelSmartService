@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
-import { Ionicons } from 'react-native-elements';
 import { Icon } from 'react-native-elements';
 
 class InfoListItem extends React.Component {
