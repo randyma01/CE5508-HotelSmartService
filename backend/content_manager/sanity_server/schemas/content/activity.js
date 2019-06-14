@@ -42,6 +42,15 @@ export default {
       required: true
     },
     {
+      name: 'date',
+      title: 'Fecha',
+      type: 'date',
+      options: {
+        dateFormat: 'YYYY-MM-DD',
+        calendarTodayLabel: 'Today'
+      }
+    },
+    {
       name: 'imagesActivities',
       title: 'Imagen Actividades',
       type: 'image'

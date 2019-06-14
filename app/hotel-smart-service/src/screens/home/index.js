@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Image, Text, ScrollView, View } from 'react-native';
+import { Image, ScrollView, Text, View } from 'react-native';
 import { createStackNavigator } from 'react-navigation';
 
 //
@@ -23,6 +23,7 @@ class HomeScreen extends React.Component {
       fontWeight: 'bold'
     }
   };
+
   constructor(props) {
     super(props);
   }

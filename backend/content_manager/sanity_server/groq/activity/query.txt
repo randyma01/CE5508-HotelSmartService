@@ -3,7 +3,8 @@
   maxPeople,
   minPeople,
   price,
-  imageUrl
+  imageUrl,
+  date
 }
 
-https://7yrptxv6.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'activity'%5D%20%7C%7B%0A%20%20activity%2C%0A%20%20maxPeople%2C%0A%20%20minPeople%2C%0A%20%20price%2C%0A%20%20imageUrl%0A%7D
+https://7yrptxv6.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20%27activity%27%5D%20%7C%7B%0A%20%20activity%2C%0A%20%20maxPeople%2C%0A%20%20minPeople%2C%0A%20%20price%2C%0A%20%20imageUrl%2C%0A%20%20date%0A%7D
