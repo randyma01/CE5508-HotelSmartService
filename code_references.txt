@@ -51,3 +51,11 @@ Tutorial by Knut Melvæ. The code shown in the tutorial was a guide to build thi
 project. 
 https://www.youtube.com/watch?v=2ceM_tSus_M
 https://www.sanity.io/docs/
+
+* Calendar and Syncronization of Time*
+Tutorial by wix, Tautvilas Mecinskas , Katrin Zotchev, and also by KODETR. The code shown in the tutorial 
+was a guide to build this feature on the project. 
+
+https://www.youtube.com/watch?v=M1vshcE6f3o
+https://www.npmjs.com/package/react-native-calendars
+https://github.com/wix/react-native-calendars
