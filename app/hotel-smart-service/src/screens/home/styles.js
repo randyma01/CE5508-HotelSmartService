@@ -25,23 +25,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column'
   },
-  text: {
-    color: '#FF7C00',
-    fontSize: 20,
-    margin: 10,
-    marginTop: '20%',
-    textAlign: 'left',
-    textDecorationStyle: 'solid',
-    width: '50%'
-  },
-  textBody: {
-    color: '#FF7C00',
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginTop: '10%',
-    textAlign: 'center',
-    textDecorationStyle: 'solid'
-  },
   textInfo: {
     borderRadius: 8,
     color: '#656565',
@@ -50,16 +33,6 @@ const styles = StyleSheet.create({
     padding: 1,
     paddingBottom: 6,
     textAlign: 'center'
-  },
-  textTitle: {
-    color: '#FF7C00',
-    fontSize: 40,
-    fontWeight: 'bold',
-    margin: 10,
-    marginTop: '20%',
-    textAlign: 'left',
-    textDecorationStyle: 'solid',
-    width: '50%'
   }
 });
 

@@ -63,17 +63,11 @@ export default class ClimateScreen extends React.Component {
       title={item.date}
       subtitle={
         <View style={styles.subtitleView}>
-          <Text style={styles.ratingText}>{item.condition}.</Text>
-          <Text style={styles.ratingText}>{item.temp}°C</Text>
-          {/* <View style={styles.subSubtitleView}>
-            <Text style={styles.subRatingText}>Sunrise:</Text>
-            <Text style={styles.subRatingText}>{item.sunrise}</Text>
-            <Text style={styles.subRatingText}>Sunset:</Text>
-            <Text style={styles.subRatingText}>{item.sunrise}</Text>
-          </View> */}
+          <Text style={styles.climateText}>{item.condition}. </Text>
+          <Text style={styles.climateText}>{item.temp}°C</Text>
         </View>
       }
-      leftAvatar={{ source: { uri: item.icon } }}
+      rightAvatar={{ source: { uri: item.icon } }}
     />
   );
 

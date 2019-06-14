@@ -1,16 +1,6 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: '10%',
-    padding: '2%'
-  },
-  contentContainer: {
-    padding: 10,
-    fontSize: 18,
-    height: 44
-  },
   flowRight: {
     alignItems: 'center',
     alignSelf: 'stretch',
@@ -19,9 +9,9 @@ const styles = StyleSheet.create({
   header: {
     color: '#FF7C00',
     fontSize: 28,
-    textAlign: 'center',
+    fontWeight: 'bold',
     margin: 10,
-    fontWeight: 'bold'
+    textAlign: 'center'
   },
   mainView: {
     flex: 1,
@@ -32,47 +22,20 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20
   },
-  ratingText: {
-    paddingLeft: 10,
-    color: '#FF7C00'
-  },
-  subRatingText: {
-    textAlign: 'left',
-    paddingLeft: 0,
-    color: '#FF7C00'
+  climateText: {
+    color: '#FF7C00',
+    paddingLeft: 10
   },
   scrollView: {
     flex: 1,
     flexDirection: 'column'
   },
-  separator: {
-    height: 1,
-    width: '100%',
-    backgroundColor: '#000000'
-  },
   subtitleView: {
     flexDirection: 'row',
-    //justifyContent: 'space-between',
     paddingLeft: 10,
     paddingTop: 5
-  },
-  subSubtitleView: {
-    flexDirection: 'row',
-    //justifyContent: 'space-between',
-    paddingLeft: 10,
-    paddingTop: 5
-  },
-  text: {
-    color: '#FF7C00',
-    fontSize: 22,
-    margin: 10,
-    marginTop: '20%',
-    textAlign: 'left',
-    textDecorationStyle: 'solid',
-    width: '50%'
   },
   textInfo: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
     borderRadius: 8,
     color: '#656565',
     fontSize: 22,
@@ -83,7 +46,6 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   textApixu: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
     borderRadius: 8,
     color: '#656565',
     fontSize: 10,

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { FlatList, RefreshControl, Text, View } from 'react-native';
-import { Card, ListItem } from 'react-native-elements';
+import { Card } from 'react-native-elements';
 
 import styles from './styles';
 
@@ -20,8 +20,8 @@ export default class RestaurantScreen extends React.Component {
     this.state = {
       isLoading: false,
       refreshing: false,
-      menu: [],
-      restaurant: []
+      restaurant: [],
+      menu: []
     };
   }
 
