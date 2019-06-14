@@ -18,7 +18,8 @@ In construction.
 
 ## Run the App ⚙️
 
-In construction.
+- Sanity.io (CMS): Link to the Content
+  - (https://hotelcm.sanity.studio/)
 
 ## Built With 👷🏻
 

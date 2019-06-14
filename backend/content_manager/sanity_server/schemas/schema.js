@@ -2,10 +2,13 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 import blockContent from './blockContent';
-import category from './category';
-import product from './product';
+import category from './content/category';
+import menu from './content/menu';
+//import product from './content/product';
 import productVariant from './productVariant';
-import vendor from './vendor';
+import room from './content/room';
+import service from './content/service';
+//import vendor from './content/vendor';
 
 import localeString from './locale/String';
 import localeText from './locale/Text';
@@ -15,9 +18,14 @@ export default createSchema({
   name: 'default',
 
   types: schemaTypes.concat([
-    product,
-    vendor,
+    /*schemas for the content */
     category,
+    menu,
+    //product,
+    //vendor,
+    service,
+    room,
+    /*structure for schemas */
     blockContent,
     localeText,
     localeBlockContent,

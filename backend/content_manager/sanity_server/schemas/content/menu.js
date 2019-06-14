@@ -1,21 +1,37 @@
 export default {
-  name: 'Room',
-  title: 'Room',
+  name: 'menu',
+  title: 'Menú',
   type: 'document',
   fields: [
     {
-      name: 'title',
-      title: 'Title',
+      name: 'dish',
+      title: 'Platillo',
       type: 'string'
     },
     {
-      name: 'slug',
-      title: 'Slug',
+      name: 'ingredients',
+      title: '¿Qué contiene?',
+      type: 'text'
+    },
+    {
+      name: 'tagURL',
+      title: 'Tag URL',
       type: 'slug',
       options: {
         source: 'title',
         maxLength: 96
       }
+    },
+    {
+      name: 'avaiable',
+      title: 'Available',
+      type: 'boolean',
+      required: true
+    },
+    {
+      title: 'Image URL',
+      name: 'imageUrl',
+      type: 'image'
     },
     {
       name: 'description',

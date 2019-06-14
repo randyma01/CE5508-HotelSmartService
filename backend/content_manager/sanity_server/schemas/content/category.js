@@ -1,6 +1,6 @@
 export default {
   name: 'category',
-  title: 'Category',
+  title: 'Categorías',
   type: 'document',
   fields: [
     {
@@ -18,20 +18,15 @@ export default {
       }
     },
     {
-      name: 'description',
-      title: 'Description',
-      type: 'text'
-    },
-    {
       name: 'parents',
       title: 'Parent categories',
       type: 'array',
       of: [
         {
           type: 'reference',
-          to: [{type: 'category'}]
+          to: [{ type: 'category' }]
         }
       ]
     }
   ]
-}
+};
