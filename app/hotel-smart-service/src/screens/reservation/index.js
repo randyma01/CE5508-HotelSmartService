@@ -1,14 +1,5 @@
 import * as React from 'react';
-import {
-  ActivityIndicator,
-  Alert,
-  Image,
-  Text,
-  ScrollView,
-  TextInput,
-  TouchableOpacity,
-  View
-} from 'react-native';
+import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
 import styles from './styles';
 
