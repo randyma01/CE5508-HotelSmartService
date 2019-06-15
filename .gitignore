@@ -24,6 +24,9 @@ app/hotel-smart-devices/*
 app/hotel-smart-service/node_modules/
 
 # -- backend -- #
+#aws-mobile#
+backend/aws_mobile/node_modules
+
 #content manager#
 backend/content_manager/sanity_server/node_modules
 

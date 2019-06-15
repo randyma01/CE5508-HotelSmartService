@@ -1,12 +1,35 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  bottom: {
+    backgroundColor: '#FF7C00',
+    //borderRadius: 10,
+    color: '#FFFFFF',
+    fontSize: 18,
+    fontWeight: 'bold',
+    height: 25,
+    marginBottom: '3%',
+    marginTop: '3%',
+    padding: 8,
+    textAlign: 'center',
+    width: 160
+  },
+  containerSignUp: {
+    alignItems: 'center',
+    marginTop: 40,
+    padding: 30
+  },
   header: {
     color: '#FF7C00',
     fontSize: 28,
     textAlign: 'center',
-    margin: 10,
+    margin: 5,
     fontWeight: 'bold'
+  },
+  flowRight: {
+    alignItems: 'center',
+    alignSelf: 'stretch',
+    flexDirection: 'column'
   },
   mainView: {
     alignItems: 'center',
@@ -26,6 +49,35 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     textDecorationStyle: 'solid',
     width: '50%'
+  },
+  textInput: {
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderRadius: 8,
+    color: '#000000',
+    fontSize: 18,
+    height: 36,
+    justifyContent: 'space-between',
+    marginRight: 5,
+    marginTop: 10,
+    padding: 1,
+    paddingBottom: 20,
+    textAlign: 'center',
+    width: '60%'
+  },
+  textInfo: {
+    borderRadius: 8,
+    color: '#656565',
+    fontSize: 18,
+    marginBottom: '5%',
+    marginTop: '5%',
+    padding: 1,
+    paddingBottom: 6,
+    textAlign: 'center'
+  },
+  titleSignUp: {
+    fontSize: 50,
+    marginBottom: 30,
+    textAlign: 'center'
   }
 });
 
